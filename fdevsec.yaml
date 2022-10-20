@@ -3,3 +3,14 @@ version: v1
 id:
   org: 1f4a33ea-8778-479a-ad46-89c06e1e6519
   app: 467e625c-033e-49b9-8bba-f790698f0cec
+scanners:
+  - sast
+  - dast
+  - secret
+  - sca
+  - iac
+  - container   
+dast:
+  url: https://github.com/CristianoLMBorges/DVWAXperts:8081/
+  fortipentest_scanner: false #true|false
+  full_scan: true #true|false
